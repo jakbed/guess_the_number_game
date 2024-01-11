@@ -33,14 +33,13 @@ def game():
             if attemps == 0:
                 print(f"You lose. Coputer number was: {computer_number}\n")
             else:
-               print(f"YOU GUESSED THE NUMBER -> {computer_number}\n")
+               print(f"\nYOU GUESSED THE NUMBER -> {computer_number}\n")
             play_again()
 
     print("Welcome to the Number Guessing Game!")
-    print("Im thinking about the number from 1 to 100. Can you guess the number? :)")
+    print("I'm thinking of a number from 1 to 100. Can you guess this number? :)")
     difficulty = input("Choose a difficulty. Type 'hard' or 'easy': ")
     computer_number = random.randint(1, 100)
-    print(f"test: {computer_number}")
     if difficulty == 'hard':
         play_game(5, computer_number)
         
@@ -49,6 +48,5 @@ def game():
 
     else:
          game()
-
 
 game()
